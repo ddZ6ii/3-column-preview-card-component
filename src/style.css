@@ -74,11 +74,58 @@
       font-family: theme('fontFamily.bodyVF');
     }
   }
+
+  h2 {
+    font: theme('fontSize.heading') / 1.2 theme('fontFamily.heading');
+    @apply font-bold uppercase tracking-wide text-neutral-50;
+    @supports (font-variation-settings: normal) {
+      font-family: theme('fontFamily.headingVF');
+    }
+  }
 }
 /* ########################################
-########### LAYER STYLING #################
+########## COMPONENTS STYLING #############
 ######################################## */
 
 /* ########################################
-########### COMPONENT STYLING #############
+######### UTILITIES STYLING ###############
 ######################################## */
+@layer utilities {
+  .card {
+    @apply grid gap-y-6 p-10 lg:gap-y-12;
+    & .card-title {
+      @apply text-2xl text-heading;
+    }
+    & .card-cta {
+      @apply w-fit rounded-full border-2 border-transparent bg-neutral-50 px-7 py-3 capitalize transition-all lg:mt-8;
+      &:is(:hover, :focus-visible) {
+        @apply border-neutral-50 bg-transparent text-neutral-50;
+      }
+      &:focus-visible {
+        @apply outline-inherit;
+        color: #ffffffe6;
+        color: #ce7618;
+      }
+    }
+  }
+
+  .link {
+    @apply transition-all;
+    &,
+    &:link {
+      @apply text-blue-600 underline underline-offset-4;
+    }
+    &:visited {
+      @apply text-slate-400;
+    }
+    &:is(:hover, :focus-visible) {
+      @apply text-amber-600;
+    }
+    &:focus-visible {
+      @apply no-underline outline-inherit;
+    }
+    &:active {
+      @apply text-rose-600;
+    }
+  }
+}

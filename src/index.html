@@ -17,66 +17,70 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Frontend Mentor | 3-column preview card component</title>
   </head>
-  <body>
+  <body class="grid min-h-dvh grid-rows-[1fr_auto] items-center bg-neutral-50">
     <main>
       <h1 class="sr-only">Our car selection</h1>
-      <section>
-        <ul>
-          <li>
+      <section class="mx-auto my-28 w-10/12 max-w-sm lg:my-0 lg:max-w-4xl">
+        <ul class="overflow-hidden rounded-lg lg:flex">
+          <li class="card bg-primary-orange">
             <img
               src="/assets/images/icon-sedans.svg"
               alt=""
               width="64"
               height="40"
             />
-            <h2>Sedans</h2>
+            <h2 class="card-title">Sedans</h2>
             <p>
               Choose a sedan for its affordability and excellent fuel economy.
               Ideal for cruising in the city or on your next road trip.
             </p>
-            <a href="#">Lean More</a>
+            <a href="#" class="card-cta text-primary-orange">Learn More</a>
           </li>
-          <li>
+          <li class="card bg-primary-cyanDark">
             <img
               src="/assets/images/icon-suvs.svg"
               alt=""
               width="64"
               height="40"
             />
-            <h2>SUVs</h2>
+            <h2 class="card-title">SUVs</h2>
             <p>
               Take an SUV for its spacious interior, power, and versatility.
               Perfect for your next family vacation and off-road adventures.
             </p>
-            <a href="#">Lean More</a>
+            <a href="#" class="card-cta text-primary-cyanDark">Learn More</a>
           </li>
-          <li>
+          <li class="card bg-primary-cyanDarker">
             <img
               src="/assets/images/icon-luxury.svg"
               alt=""
               width="64"
               height="40"
             />
-            <h2>Luxury</h2>
+            <h2 class="card-title">Luxury</h2>
             <p>
               Cruise in the best car brands without the bloated prices. Enjoy
               the enhanced comfort of a luxury rental and arrive in style.
             </p>
-            <a href="#">Lean More</a>
+            <a href="#" class="card-cta text-primary-cyanDarker">Learn More</a>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="p-6 text-center text-slate-600">
       <p>
         Challenge by
         <a
           href="https://www.frontendmentor.io?ref=challenge"
           title="Visit the website"
+          class="link"
           >Frontend Mentor</a
         >. <br />
-        Coded with <span>❤</span> by
-        <a href="https://github.com/ddZ6ii" title="Visit Github profile"
+        Coded with <span class="text-rose-600">❤</span> by
+        <a
+          href="https://github.com/ddZ6ii"
+          title="Visit Github profile"
+          class="link"
           >ddZ6ii</a
         >.
       </p>
