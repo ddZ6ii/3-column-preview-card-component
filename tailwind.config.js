@@ -5,13 +5,13 @@ export default {
     extend: {
       colors: {
         primary: {
-          orange: '#e38826',
+          orange: '#9d5a11',
           cyanDark: '#006970',
           cyanDarker: '#004241',
         },
         neutral: {
           50: '#f2f2f2',
-          100: '#ffffffbf',
+          100: '#ffffffe6',
         },
       },
       fontFamily: {
@@ -26,7 +26,7 @@ export default {
       },
       fontSize: {
         body: '0.9375rem',
-        heading: '2rem',
+        heading: '2.5rem',
       },
     },
     plugins: [],
